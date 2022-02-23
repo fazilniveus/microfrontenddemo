@@ -18,18 +18,6 @@ pipeline {
 		    }
 	    }
 	    
-	    stage('Build') {
-		    steps {
-			    sh 'mvn clean package'
-		    }
-	    }
-	    
-	    stage('Test') {
-		    steps {
-			    echo "Testing..."
-			    sh 'mvn test'
-		    }
-	    }
 	    
 	    stage('Build Docker Image') {
 		    steps {
