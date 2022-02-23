@@ -1,5 +1,11 @@
-FROM tomcat:8.0.20-jre8
+FROM node:12.18.3  as build-stage
 
-RUN mkdir /usr/local/tomcat/webapps/myapp
+WORKDIR /App
 
-COPY kubernetes/target/kubernetes-1.0-AMIT.war /usr/local/tomcat/webapps/kubernetes-1.0-AMIT.war
+COPY package*.json /App/
+RUN npm install
+ 
+ 
+COPY ./ /App/
+EXPOSE 5003
+CMD [ "npm", "run","start" ]

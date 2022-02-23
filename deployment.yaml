@@ -2,21 +2,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
- name: myapp
+ name: App
  labels:
-  app: myapp
+  app: App
 spec:
  replicas: 1
  selector:
   matchLabels:
-   app: myapp
+   app: App
  template:
   metadata: 
    labels:
-    app: myapp
+    app: App
   spec:
    containers:
-   - name: myapp
+   - name: App
      image: fazilniveus/devops:tagversion
      ports:
      - containerPort: 8080
@@ -25,11 +25,11 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: myapp
-spec:
+  name: App
+spec:ss
   type: LoadBalancer
   selector:
-    app: myapp
+    app: App
   ports:
     - protocol: TCP
       port: 80
