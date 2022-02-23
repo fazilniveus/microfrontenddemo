@@ -1,0 +1,57 @@
+{
+    "name": "tpdp",
+    "version": "0.0.0",
+    "license": "MIT",
+    "description": "This is a sample app with todo",
+    "author": {
+        "name": "Rajashree L"
+    },
+    "homepage": "https://github.com/microsoft/redux-micro-frontend",
+    "keywords": [
+        "redux",
+        "micro frontend",
+        "microfrontend",
+        "microfrontends",
+        "micro frontends",
+        "state",
+        "statemanagement"
+    ],
+    "bugs": {
+        "url": "https://github.com/microsoft/redux-micro-frontend/issues",
+        "email": "pratikb@microsoft.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/microsoft/redux-micro-frontend"
+    },
+    "scripts": {
+        "start": "webpack serve --config webConfig/webpack.dev.js",
+        "build": "rimraf dist && webpack --config webConfig/webpack.prod.js"
+    },
+    "private": false,
+    "dependencies": {
+        "@babel/plugin-transform-runtime": "^7.16.10",
+        "history": "^5.2.0",
+        "react": "^16.14.0",
+        "react-dom": "^16.14.0",
+        "webpack-merge": "^5.8.0"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.12.1",
+        "@babel/core": "^7.16.12",
+        "@babel/preset-env": "^7.16.11",
+        "@babel/preset-react": "^7.16.7",
+        "babel-eslint": "^10.1.0",
+        "babel-loader": "^8.2.3",
+        "clean-webpack-plugin": "^3.0.0",
+        "css-loader": "^5.0.0",
+        "html-webpack-plugin": "^4.5.0",
+        "react": "^16.14.0",
+        "react-dom": "^16.14.0",
+        "redux-micro-frontend": "^1.1.1",
+        "style-loader": "^2.0.0",
+        "webpack": "^5.1.3",
+        "webpack-cli": "^4.1.0",
+        "webpack-dev-server": "^3.11.2"
+    }
+}
