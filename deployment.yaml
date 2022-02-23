@@ -17,7 +17,7 @@ spec:
   spec:
    containers:
    - name: App
-     image: fazilniveus/devops:tagversion
+     image: fazilniveus/micro:tagversion
      ports:
      - containerPort: 8080
 

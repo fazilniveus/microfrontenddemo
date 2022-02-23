@@ -23,7 +23,7 @@ pipeline {
 		    steps {
 			    sh 'whoami'
 			    script {
-				    myimage = docker.build("fazilniveus/devops:${env.BUILD_ID}")
+				    myimage = docker.build("fazilniveus/micro:${env.BUILD_ID}")
 			    }
 		    }
 	    }
